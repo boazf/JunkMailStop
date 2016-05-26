@@ -1,0 +1,34 @@
+HKCR
+{
+	JMSOAddin.JMSOAddinPropPage.1 = s 'JMSOAddinPropPage Class'
+	{
+		CLSID = s '{E84495E9-5698-4A6F-9474-E9202EDEB68B}'
+	}
+	JMSOAddin.JMSOAddinPropPage = s 'JMSOAddinPropPage Class'
+	{
+		CLSID = s '{E84495E9-5698-4A6F-9474-E9202EDEB68B}'
+		CurVer = s 'JMSOAddin.JMSOAddinPropPage.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {E84495E9-5698-4A6F-9474-E9202EDEB68B} = s 'JMSOAddinPropPage Class'
+		{
+			ProgID = s 'JMSOAddin.JMSOAddinPropPage.1'
+			VersionIndependentProgID = s 'JMSOAddin.JMSOAddinPropPage'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			ForceRemove 'Control'
+			ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 104'
+			'MiscStatus' = s '0'
+			{
+			    '1' = s '%OLEMISC%'
+			}
+			'TypeLib' = s '{1B76F27C-6DDD-4E68-AAB7-7E1E50E17B02}'
+			'Version' = s '1.0'
+		}
+	}
+}

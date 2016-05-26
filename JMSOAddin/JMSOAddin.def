@@ -1,0 +1,9 @@
+; JMSOAddin.def : Declares the module parameters.
+
+LIBRARY      "JMSOAddin.DLL"
+
+EXPORTS
+	DllCanUnloadNow		PRIVATE
+	DllGetClassObject	PRIVATE
+	DllRegisterServer	PRIVATE
+	DllUnregisterServer	PRIVATE

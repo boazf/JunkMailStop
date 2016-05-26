@@ -1,0 +1,53 @@
+HKCR
+{
+	JMSOAddin.JMSOAddin.1 = s 'JMSOAddin Class'
+	{
+		CLSID = s '{39C059C5-2959-4440-B687-E19D12EC250E}'
+	}
+	JMSOAddin.JMSOAddin = s 'JMSOAddin Class'
+	{
+		CLSID = s '{39C059C5-2959-4440-B687-E19D12EC250E}'
+		CurVer = s 'JMSOAddin.JMSOAddin.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {39C059C5-2959-4440-B687-E19D12EC250E} = s 'JMSOAddin Class'
+		{
+			ProgID = s 'JMSOAddin.JMSOAddin.1'
+			VersionIndependentProgID = s 'JMSOAddin.JMSOAddin'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{1B76F27C-6DDD-4E68-AAB7-7E1E50E17B02}'
+		}
+	}
+}
+HKCU
+{
+      Software
+    {
+        Microsoft
+        {
+            Office
+            {
+                Outlook
+                {
+                    Addins
+                    {
+                        'JMSOAddin.JMSOAddin'
+                        {
+                            val FriendlyName = s 'Junk Mail Stop Outlook Addin'
+                            val Description = s 'Junk Mail Stop Outlook Addin'
+                            val LoadBehavior = d '00000003'
+                            val CommandLineSafe = d '00000000' 
+                            val RequireShutdownNotification = d '00000001'
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,89 @@
+// JMSOAddin.idl : IDL source for JMSOAddin
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (JMSOAddin.tlb) and marshalling code.
+
+#include "olectl.h"
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+    object,
+    uuid(535B0F64-0382-46FE-9235-7E5CE5838EC5),
+    dual,
+    nonextensible,
+    helpstring("IJMSOAddin Interface"),
+    pointer_default(unique)
+]
+interface IJMSOAddin : IDispatch{
+};
+
+[
+    object,
+    uuid(52F8E47F-CFB2-43E4-9E88-6A2A33E519AA),
+    dual,
+    nonextensible,
+    helpstring("IJMSOAddinPropPage Interface"),
+    pointer_default(unique)
+]
+interface IJMSOAddinPropPage : IDispatch{
+};
+
+[
+	object,
+	uuid(62F95F25-2C5E-4CBB-B243-28573FAFBC84),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IItemsEvents : IDispatch{
+};
+
+[
+    object,
+    uuid(CE895442-9981-4315-AA85-4B9A5C7739D8),
+    dual,
+    nonextensible,
+    helpstring("IRibbonCallback Interface"),
+    pointer_default(unique)
+]
+interface IRibbonCallback : IDispatch{
+    [id(42),helpstring("Button Callback")]
+    HRESULT ButtonClicked([in]IDispatch* ribbonControl);
+    HRESULT GetVisible([in] IDispatch *pControl, [out, retval] VARIANT_BOOL *pvarReturnedVal);
+};
+
+[
+    uuid(1B76F27C-6DDD-4E68-AAB7-7E1E50E17B02),
+    version(1.0),
+    helpstring("JMSOAddin 1.0 Type Library")
+]
+library JMSOAddinLib
+{
+    importlib("stdole2.tlb");
+    [
+        uuid(39C059C5-2959-4440-B687-E19D12EC250E),
+        helpstring("JMSOAddin Class")
+    ]
+    coclass JMSOAddin
+    {
+        [default] interface IRibbonCallback;
+    };
+    [
+        uuid(E84495E9-5698-4A6F-9474-E9202EDEB68B),
+        control,
+        helpstring("JMSOAddinPropPage Class")
+    ]
+    coclass JMSOAddinPropPage
+    {
+        [default] interface IJMSOAddinPropPage;
+    };
+	[
+		uuid(FAA9B6DA-051E-43AF-8143-D08D44594FFA)		
+	]
+	coclass ItemsEvents
+	{
+		[default] interface IItemsEvents;
+	};
+};

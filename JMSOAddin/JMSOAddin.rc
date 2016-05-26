@@ -1,0 +1,209 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_JMSOADDINPROPPAGE DIALOGEX 0, 0, 293, 231
+STYLE DS_SETFONT | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&Add ...",IDC_ADD_BUTTON,226,30,50,14
+    PUSHBUTTON      "&Remove",IDC_REMOVE_BUTTON,226,52,50,14,WS_DISABLED
+    GROUPBOX        "&Servers Black List",IDC_STATIC,7,18,214,201,WS_GROUP
+    LISTBOX         IDC_SERVERS_BLACK_LIST,14,30,200,183,LBS_SORT | LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_GROUP | WS_TABSTOP
+END
+
+IDD_ADD_SERVER DIALOGEX 0, 0, 239, 66
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add Server"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_SERVER_NAME,13,22,213,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,56,45,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,134,45,50,14
+END
+
+IDD_SELECT_SERVERS DIALOGEX 0, 0, 240, 143
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Servers"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_SERVERS_LIST,7,7,226,105,LBS_SORT | LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,63,122,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,126,122,50,14
+END
+
+IDD_DETECT_SERVERS_PROGRESS_DIALOG DIALOGEX 0, 0, 316, 58
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Servers Detection Progress"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Cancel",IDCANCEL,259,10,50,14
+    CONTROL         "",IDC_DETECTION_PROGRESS,"msctls_progress32",WS_BORDER,7,10,241,14
+    LTEXT           "Static",IDC_DETECTION_PART,7,38,241,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_JMSOADDINPROPPAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 276
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 224
+    END
+
+    IDD_ADD_SERVER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 234
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_SELECT_SERVERS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_DETECT_SERVERS_PROGRESS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        BOTTOMMARGIN, 51
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "1 TYPELIB ""JMSOAddin.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_JMSOADDIN           REGISTRY                "JMSOAddin.rgs"
+IDR_JMSOADDIN1          REGISTRY                "JMSOAddin1.rgs"
+IDR_JMSOADDINPROPPAGE   REGISTRY                "JMSOAddinPropPage.rgs"
+IDR_ITEMSEVENTS         REGISTRY                "ItemsEvents.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_JMSOADDINPROPPAGE   BITMAP                  "JMSOAddinPropPage.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// XML
+//
+
+IDR_XML_RIBBON_MANIFEST XML                     "RibbonManifest.xml"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "JMSOAddin"
+    IDS_ADDIN_NAME          "Junk Mail Stop Outlook Addin"
+    IDS_REG_OPEN_ROOT_ERROR "Failed to create/open registry key HKEY_CURRENT_USER\\%1, error: %2!u!"
+    IDS_REG_QUERY_BLACK_LIST_ERROR 
+                            "Failed to query information of regisstry key HKEY_CURRENT_USER\\%1\\%2, error: %3!u!"
+    IDS_REG_OPEN_BLACK_LIST_ERROR 
+                            "Failed to create/open registry key HKEY_CURRENT_USER\\%1\\%2, error: %3!u!"
+    IDS_SERVERS_COL_HEADING "Servers"
+    IDS_REG_GET_BLACK_LST_VALUE_ERROR 
+                            "Failed to retrieve regisstry value HKEY_CURRENT_USER\\%1\\%2\\%3!d!, error: %4!u!"
+    IDS_NO_SERVERS_TO_ADD   "All servers of selectect mail items are already in the black list."
+    IDS_PROPPAGETITLE       "Junk Mail Stop"
+    IDS_DETECT_SERVERS      "Detect Servers"
+    IDS_ADD_BLACK_SERVERS   "Add Black Servers"
+    IDS_DETECT_SERVERS_ERROR 
+                            "An error occured while processing folder's mail messages."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_FAILED_TO_PROCESS_MAIL_ITEM "Failed to process mail item!"
+    IDS_FAILED_TO_PROCESS_MAIL_ITEMS 
+                            "Failed to process one or all mail items!"
+    IDS_MONITOR_THREAD_ERROR 
+                            "Failed to start monitoring configuration changes, error: %1!u!"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "JMSOAddin.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

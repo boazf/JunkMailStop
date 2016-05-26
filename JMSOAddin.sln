@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DbgConfig", "DbgConfig\DbgConfig.vcxproj", "{FEC7564E-7B1B-4A6C-99E4-79B149F4747E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JMSOAddin", "JMSOAddin\JMSOAddin.vcxproj", "{11E13D48-4519-49CB-B5F1-9EF538DB8B59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Template|Win32 = Template|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEC7564E-7B1B-4A6C-99E4-79B149F4747E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FEC7564E-7B1B-4A6C-99E4-79B149F4747E}.Debug|Win32.Build.0 = Debug|Win32
+		{FEC7564E-7B1B-4A6C-99E4-79B149F4747E}.Release|Win32.ActiveCfg = Release|Win32
+		{FEC7564E-7B1B-4A6C-99E4-79B149F4747E}.Release|Win32.Build.0 = Release|Win32
+		{FEC7564E-7B1B-4A6C-99E4-79B149F4747E}.Template|Win32.ActiveCfg = Template|Win32
+		{FEC7564E-7B1B-4A6C-99E4-79B149F4747E}.Template|Win32.Build.0 = Template|Win32
+		{11E13D48-4519-49CB-B5F1-9EF538DB8B59}.Debug|Win32.ActiveCfg = Debug|Win32
+		{11E13D48-4519-49CB-B5F1-9EF538DB8B59}.Debug|Win32.Build.0 = Debug|Win32
+		{11E13D48-4519-49CB-B5F1-9EF538DB8B59}.Release|Win32.ActiveCfg = Release|Win32
+		{11E13D48-4519-49CB-B5F1-9EF538DB8B59}.Release|Win32.Build.0 = Release|Win32
+		{11E13D48-4519-49CB-B5F1-9EF538DB8B59}.Template|Win32.ActiveCfg = Release|Win32
+		{11E13D48-4519-49CB-B5F1-9EF538DB8B59}.Template|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
