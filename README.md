@@ -11,4 +11,4 @@ This is a Visual Studio 2010 project. The addin was developed for outlook 2010, 
 The project build jmsoaddin.dll (Junk Mail Stop Outlook Addin). To install the addin just run:
 regsvr32 jmsoaddin.dll
 I use TortoiseSVN for my development. There is a pre-build step that sets the revision number according to the SVN revision. You will have to work this around.
-Also in stdafx.h there are 3 import lines with absolute path to office files. you'll have to modify this according to your system.
+Also in stdafx.h there are 3 #import lines with absolute path to office files. You'll have to modify this according to your system.
