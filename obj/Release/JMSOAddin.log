@@ -1,0 +1,25 @@
+﻿Build started 29/05/2016 18:05:16.
+     1>Project "C:\Users\boaz\Google Drive\Documents\Visual Studio 2010\Projects\JMSOAddin.github\JMSOAddin\JMSOAddin.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "C:\Users\boaz\Google Drive\Documents\Visual Studio 2010\Projects\JMSOAddin.github\obj\Release\JMSOAddin.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       Midl:
+         All outputs are up-to-date.
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+         JMSOAddin.vcxproj -> C:\Users\boaz\Google Drive\Documents\Visual Studio 2010\Projects\JMSOAddin.github\bin\Release\JMSOAddin.dll
+       FinalizeBuildStatus:
+         Deleting file "C:\Users\boaz\Google Drive\Documents\Visual Studio 2010\Projects\JMSOAddin.github\obj\Release\JMSOAddin.unsuccessfulbuild".
+         Touching "C:\Users\boaz\Google Drive\Documents\Visual Studio 2010\Projects\JMSOAddin.github\obj\Release\JMSOAddin.lastbuildstate".
+     1>Done Building Project "C:\Users\boaz\Google Drive\Documents\Visual Studio 2010\Projects\JMSOAddin.github\JMSOAddin\JMSOAddin.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.15

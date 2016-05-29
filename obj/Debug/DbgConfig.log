@@ -1,0 +1,14 @@
+﻿Build started 29/05/2016 17:54:16.
+     1>Project "C:\Users\boaz\Google Drive\Documents\Visual Studio 2010\Projects\JMSOAddin.github\DbgConfig\DbgConfig.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "C:\Users\boaz\Google Drive\Documents\Visual Studio 2010\Projects\JMSOAddin.github\obj\Debug\DbgConfig.unsuccessfulbuild".
+       PreBuildEvent:
+         "C:\Users\boaz\Google Drive\Documents\Visual Studio 2010\Projects\JMSOAddin.github\inc\revision.bat" "C:\Users\boaz\Google Drive\Documents\Visual Studio 2010\Projects\JMSOAddin.github\."  "C:\Users\boaz\Google Drive\Documents\Visual Studio 2010\Projects\JMSOAddin.github\inc\revision.svn" "C:\Users\boaz\Google Drive\Documents\Visual Studio 2010\Projects\JMSOAddin.github\inc\revision.tmp" "C:\Users\boaz\Google Drive\Documents\Visual Studio 2010\Projects\JMSOAddin.github\inc\revision.h"
+         :VCEnd
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets(103,5): error MSB3073: The command ""C:\Users\boaz\Google Drive\Documents\Visual Studio 2010\Projects\JMSOAddin.github\inc\revision.bat" "C:\Users\boaz\Google Drive\Documents\Visual Studio 2010\Projects\JMSOAddin.github\."  "C:\Users\boaz\Google Drive\Documents\Visual Studio 2010\Projects\JMSOAddin.github\inc\revision.svn" "C:\Users\boaz\Google Drive\Documents\Visual Studio 2010\Projects\JMSOAddin.github\inc\revision.tmp" "C:\Users\boaz\Google Drive\Documents\Visual Studio 2010\Projects\JMSOAddin.github\inc\revision.h"
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets(103,5): error MSB3073: :VCEnd" exited with code 1.
+     1>Done Building Project "C:\Users\boaz\Google Drive\Documents\Visual Studio 2010\Projects\JMSOAddin.github\DbgConfig\DbgConfig.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.09

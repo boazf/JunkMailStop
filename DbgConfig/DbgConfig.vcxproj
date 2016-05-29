@@ -95,7 +95,8 @@
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <PreBuildEvent>
-      <Command>"$(SolutionDir)inc\revision.bat" "$(SolutionDir)."  "$(SolutionDir)inc\revision.svn" "$(SolutionDir)inc\revision.tmp" "$(SolutionDir)inc\revision.h"</Command>
+      <Command>
+      </Command>
     </PreBuildEvent>
     <CustomBuildStep>
       <Command>
@@ -133,7 +134,8 @@
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <PreBuildEvent>
-      <Command>"$(SolutionDir)inc\revision.bat" "$(SolutionDir)."  "$(SolutionDir)inc\revision.svn" "$(SolutionDir)inc\revision.tmp" "$(SolutionDir)inc\revision.h"</Command>
+      <Command>
+      </Command>
     </PreBuildEvent>
     <CustomBuildStep>
       <Command>

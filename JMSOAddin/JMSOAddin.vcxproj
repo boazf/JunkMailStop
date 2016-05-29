@@ -56,7 +56,8 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <PreBuildEvent>
-      <Command>"$(SolutionDir)inc\revision.bat" "$(SolutionDir)."  "$(SolutionDir)inc\revision.svn" "$(SolutionDir)inc\revision.tmp" "$(SolutionDir)inc\revision.h"</Command>
+      <Command>
+      </Command>
     </PreBuildEvent>
     <Midl>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -99,7 +100,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <PreBuildEvent>
-      <Command>"$(SolutionDir)inc\revision.bat" "$(SolutionDir)."  "$(SolutionDir)inc\revision.svn" "$(SolutionDir)inc\revision.tmp" "$(SolutionDir)inc\revision.h"</Command>
+      <Command>
+      </Command>
     </PreBuildEvent>
     <Midl>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
